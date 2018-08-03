@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padc.mmkunyi.viewpods.LoginHeaderViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height">
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_login_back" />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark"
+        android:foreground="@drawable/ripple_btn"
+        android:minHeight="30dp"
+        android:paddingBottom="3dp"
+        android:text="Join Now"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+
+</com.padc.mmkunyi.viewpods.LoginHeaderViewPod>

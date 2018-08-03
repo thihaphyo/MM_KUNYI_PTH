@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_medium_2"
+    android:paddingRight="@dimen/margin_medium_2"
+    android:paddingTop="@dimen/margin_medium_2"
+    android:clickable="true"
+    android:foreground="@drawable/ripple_btn">
+
+
+    <LinearLayout
+        android:id="@+id/llJobContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivJobHero"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_job" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/tvJobName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:lineSpacingMultiplier="1.3"
+                android:text="House Cleaning Job"
+                android:textColor="@color/secondaryColor"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvJobName"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:lineSpacingMultiplier="1.3"
+                android:text="8 days * 10 KM"
+                android:textColor="@color/secondaryColor"
+                android:textSize="@dimen/text_regular" />
+
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvStats"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:lineSpacingMultiplier="1.3"
+                android:text="Fixed Price"
+                android:textColor="@color/secondaryColor"
+                android:textSize="@dimen/text_regular" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvActualPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="$220"
+                android:textAlignment="textEnd"
+                android:textColor="@color/secondaryColor"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAppply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/rounded_button"
+                android:elevation="@dimen/margin_medium"
+                android:minHeight="25dp"
+                android:paddingBottom="3dp"
+                android:text="Apply"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:clickable="true"
+                android:foreground="@drawable/ripple_btn"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llJobContainer"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@color/secondaryColor" />
+
+</RelativeLayout>
